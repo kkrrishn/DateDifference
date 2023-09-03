@@ -30,75 +30,75 @@ This Java library provides a convenient way to calculate date differences in var
 Download DateDifference Java File in Same Directory Where your project file have 
 
 
-    ```import DateDFT.DateDifference;```
+    import DateDFT.DateDifference;
 
 or
 
-import Your_directory.DateDFT.DateDifference;
+    import Your_directory.DateDFT.DateDifference;
 
 
 ## Usage
 
-DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
+    DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
 
 or
 
-DateDifference dt = new DateDifference(newDate, oldDate, Format);
+    DateDifference dt = new DateDifference(newDate, oldDate, Format);
 
 
 ##Formate
 
-Format 1  "dd/mm/yyy"
+    Format 1  "dd/mm/yyy"
 
 or
 
-format 2 "dd-mm-yyy"
+    format 2 "dd-mm-yyy"
 
 
 ## Examples
 
-import com.example.DateDFT.DateDifference;
-
-public class DateDifferenceExample {
-    public static void main(String[] args) {
-        int new_Year =2023,
-       new_Month = 05,
-      new_DateOfMonth = 22,
-      old_Year = 1997,
-      old_Month = 04,
-      old_DateOfMonth = 26;
-        DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
-        
-        // Calculate the number of days between two dates
-        System.out.println("Years difference: " + dt.getYear());
-        System.out.println("Months difference: " + dt.getMonth());
-        System.out.println("Days difference: " + dt.getDayOfMonth());
-        System.out.println("Tota Months Between Dates : " + dt.getAllMonth());
-        System.out.println("Tota Days Between Dates difference: " + dt.getAllDayOfMonth());
-        System.out.println("Tota Hours Between Dates: " + dt.getInHour());
-        System.out.println("Tota Minutes Between Dates: " + dt.getMints());
-        System.out.println("Tota Seconds Between Dates: " + dt.getSecond());
+    import com.example.DateDFT.DateDifference;
+    
+    public class DateDifferenceExample {
+        public static void main(String[] args) {
+            int new_Year =2023,
+           new_Month = 05,
+          new_DateOfMonth = 22,
+          old_Year = 1997,
+          old_Month = 04,
+          old_DateOfMonth = 26;
+            DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
+            
+            // Calculate the number of days between two dates
+            System.out.println("Years difference: " + dt.getYear());
+            System.out.println("Months difference: " + dt.getMonth());
+            System.out.println("Days difference: " + dt.getDayOfMonth());
+            System.out.println("Tota Months Between Dates : " + dt.getAllMonth());
+            System.out.println("Tota Days Between Dates difference: " + dt.getAllDayOfMonth());
+            System.out.println("Tota Hours Between Dates: " + dt.getInHour());
+            System.out.println("Tota Minutes Between Dates: " + dt.getMints());
+            System.out.println("Tota Seconds Between Dates: " + dt.getSecond());
+        }
     }
-}
 
 
 ##Second Exampple
 
-public class DateDifferenceExample {
-    public static void main(String[] args) {
-        String newDate = "13/05/2023", oldDate = "11/05/2000", Format ="dd/mm/yyy"; 
-        DateDifference dt = new DateDifference( newDate, oldDate, Format);
-        
-        // Calculate the number of days between two dates
-        System.out.println("Years difference: " + dt.getYear());
-        System.out.println("Months difference: " + dt.getMonth());
-        System.out.println("Days difference: " + dt.getDayOfMonth());
-        System.out.println("Tota Months Between Dates : " + dt.getAllMonth());
-        System.out.println("Tota Days Between Dates difference: " + dt.getAllDayOfMonth());
-        System.out.println("Tota Hours Between Dates: " + dt.getInHour());
-        System.out.println("Tota Minutes Between Dates: " + dt.getMints());
-        System.out.println("Tota Seconds Between Dates: " + dt.getSecond());
+    public class DateDifferenceExample {
+        public static void main(String[] args) {
+            String newDate = "13/05/2023", oldDate = "11/05/2000", Format ="dd/mm/yyy"; 
+            DateDifference dt = new DateDifference( newDate, oldDate, Format);
+            
+            // Calculate the number of days between two dates
+            System.out.println("Years difference: " + dt.getYear());
+            System.out.println("Months difference: " + dt.getMonth());
+            System.out.println("Days difference: " + dt.getDayOfMonth());
+            System.out.println("Tota Months Between Dates : " + dt.getAllMonth());
+            System.out.println("Tota Days Between Dates difference: " + dt.getAllDayOfMonth());
+            System.out.println("Tota Hours Between Dates: " + dt.getInHour());
+            System.out.println("Tota Minutes Between Dates: " + dt.getMints());
+            System.out.println("Tota Seconds Between Dates: " + dt.getSecond());
+        }
     }
-}
 
 
