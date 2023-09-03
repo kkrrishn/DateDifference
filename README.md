@@ -7,7 +7,7 @@ A Java library for calculating date differences, such as the number of days, wee
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- - [Format](#format)
+- [Format](#format)
 - [Examples](#examples)
 
 
@@ -28,32 +28,30 @@ This Java library provides a convenient way to calculate date differences in var
 ## Installation
 
 Download DateDifference Java File in Same Directory Where your project file have 
-```import DateDFT.DateDifference;
+
+
+import DateDFT.DateDifference;
+
 or
-```import Your_directory.DateDFT.DateDifference;
 
-### Maven
+import Your_directory.DateDFT.DateDifference;
 
-Add the following dependency to your project's `pom.xml` file:
-
-```xml
-<dependency>
-    <groupId>com.example</groupId>
-    <artifactId>date-difference-library</artifactId>
-    <version>1.0.0</version>
-</dependency>
 
 ## Usage
-```DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
+
+DateDifference dt = new DateDifference( new_Year,new_Month,new_DateOfMonth,old_Year, old_Month,old_DateOfMonth);
 
 or
-```DateDifference dt = new DateDifference(newDate, oldDate, Format);
+
+DateDifference dt = new DateDifference(newDate, oldDate, Format);
 
 
 ##Formate
 
 Format 1  "dd/mm/yyy"
+
 or
+
 format 2 "dd-mm-yyy"
 
 
@@ -84,7 +82,7 @@ public class DateDifferenceExample {
 }
 
 
-Second Exampple
+##Second Exampple
 
 public class DateDifferenceExample {
     public static void main(String[] args) {
