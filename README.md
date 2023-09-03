@@ -46,7 +46,7 @@ or
     DateDifference dt = new DateDifference(newDate, oldDate, Format);
 
 
-##Formate
+## Format
 
     Format 1  "dd/mm/yyy"
 
