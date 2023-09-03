@@ -1,9 +1,9 @@
-package First;
-public class DateDift {
+package DateDFT;
+public class DateDifference {
     private int new_Year,new_Month,new_DateOfMonth;
     private int old_Year,old_Month,old_DateOfMonth;
     private int Year,Month,DayOfMonth;
-    DateDift(int new_Year,int new_Month,int new_DateOfMonth,int old_Year, int old_Month,int old_DateOfMonth){
+    public DateDifference(int new_Year,int new_Month,int new_DateOfMonth,int old_Year, int old_Month,int old_DateOfMonth){
         this.new_Year = new_Year;
         this.new_Month = new_Month;
         this.new_DateOfMonth = new_DateOfMonth;
@@ -13,7 +13,7 @@ public class DateDift {
         Calculate();
     }
 
-    public DateDift(String newDate, String oldDate, String Format){
+    public DateDifference(String newDate, String oldDate, String Format){
         boolean flag=true;
         String [] date1 = Split(newDate);
         String [] date2 = Split(oldDate);
